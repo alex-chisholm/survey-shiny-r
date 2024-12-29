@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit.runtime.scriptrunner import get_script_run_ctx
 
-# Initialize session state if not already done
+# Initialize all session state variables
 if 'current_question' not in st.session_state:
     st.session_state.current_question = 1
 if 'responses' not in st.session_state:
@@ -18,6 +18,14 @@ if 'responses' not in st.session_state:
         "comm_comfort": np.random.randint(1, 6, n_responses)
     })
     st.session_state.roles = roles
+
+# Initialize form variables if they don't exist
+if 'role' not in st.session_state:
+    st.session_state.role = st.session_state.roles[0]
+if 'data_comfort' not in st.session_state:
+    st.session_state.data_comfort = 3
+if 'comm_comfort' not in st.session_state:
+    st.session_state.comm_comfort = 3
 
 # Navigation functions
 def next_question():
