@@ -7,7 +7,7 @@ library(ggplot2)
 set.seed(123)
 n_responses <- 50
 existing_data <- data.frame(
-  role = sample(c("Business Analyst", "Data Analyst", "Data Scientist", "Data Engineering"), 
+  role = sample(c("Business Analyst", "Data Analyst", "Data Scientist", "Data Engine"), 
                 n_responses, replace = TRUE),
   data_comfort = sample(1:5, n_responses, replace = TRUE),
   comm_comfort = sample(1:5, n_responses, replace = TRUE)
