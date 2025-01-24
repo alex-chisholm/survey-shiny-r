@@ -29,7 +29,7 @@ ui <- page_navbar(
         h3("Question 1 of 3"),
         radioButtons("role", "Which role best describes you?",
                     choices = c("Business Analyst", "Data Analyst", 
-                              "Data Scientist", "Data Engineer")),
+                              "Data Scientist", "Data ASDFASDFASDFSAFD")),
         actionButton("next1", "Next"),
         br(),
         actionLink("skip1", "Skip to results")
