@@ -1,4 +1,3 @@
-install.packages('shiny')
 library(shiny)
 library(bslib)
 library(dplyr)
